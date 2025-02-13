@@ -3,7 +3,6 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
 from model import determination_coefficient
 # Введення даних
 def linear_regression(X_data, Y_data):
@@ -21,7 +20,7 @@ def linear_regression(X_data, Y_data):
 
     a = (Mxy - Mx * My)/(Mx_2 - Mx*Mx)
     b = (Mx_2*My - Mxy*Mx)/(Mx_2 - Mx*Mx)
-    equation = f"Лінійна регресія: y = {a:.4f}x + {b:.4f}"
+    equation = f"y = {a:.4f}x + {b:.4f}"
     # Відображення графіків
     plt.scatter(X_data, Y_data, color='red', label='Точки даних')
     plt.plot(X_data, y_pred_linear, label='Лінійна регресія')

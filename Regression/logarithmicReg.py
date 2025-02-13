@@ -15,7 +15,7 @@ def logarithmic_regression(X_data, Y_data):
     a = (Mxy - Mx * My) / (Mx_2 - Mx * Mx)
     b = (Mx_2 * My - Mxy * Mx) / (Mx_2 - Mx * Mx)
 
-    equation = f"Логарифмічна регресія: y ={a:.4f} * ln(x) + {b:.4f}"
+    equation = f"y ={a:.4f} * ln(x) + {b:.4f}"
 
     y_pred_log = log_model(X_data, a, b)
 

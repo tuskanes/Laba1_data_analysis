@@ -19,7 +19,7 @@ def stepwise_regression(X_data, Y_data):
 
     y_pred_power = power_model(X_data, m, a)
 
-    equation = f"Степенева регресія :y = {a:.4f} * x^{m:.4f}"
+    equation = f"y = {a:.4f} * x^{m:.4f}"
 
 
     # Відображення графіків

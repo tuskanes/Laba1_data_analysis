@@ -18,7 +18,7 @@ def hyperbolic_regression(X_data, Y_data):
 
     a = (Muy -Mu *My) / (Mu_2 -Mu*Mu)
     b = (Mu_2 *My - Mu* Muy) / (Mu_2 -Mu*Mu)
-    equation = f"Гіперболічна регресія :{a:.4f}/x + {b:.4f}"
+    equation = f"y = {a:.4f}/x + {b:.4f}"
 
     y_pred_hyper = hyperbolic_model(X_data, a, b)
 

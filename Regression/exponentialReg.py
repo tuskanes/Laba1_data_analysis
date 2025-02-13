@@ -17,7 +17,7 @@ def exponential_regression(X_data, Y_data):
     m = (Mxy - Mx * My) / (Mx_2 - Mx * Mx)
     b = (Mx_2 * My - Mxy * Mx) / (Mx_2 - Mx * Mx)
     a = np.exp(b)
-    equation = f"Показникова регресія: y = {a:.4f} * e^{m:.4f}x"
+    equation = f"y = {a:.4f} * e^{m:.4f}x"
 
     y_pred_exp = exp_model(X_data, m, a)
 

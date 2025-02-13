@@ -19,7 +19,4 @@ def log_model(x, a, b):
 
 
 def determination_coefficient(y_data, y_pred):
-    y_average = np.mean(y_data)
-    #r2 = np.power(np.sum(y_data - y_pred), 2) / np.power(np.sum(y_data- y_average ), 2)
-    r2 = mean_squared_error(y_data, y_pred)
-    return round(r2,5)
+    return round(mean_squared_error(y_data, y_pred),5)

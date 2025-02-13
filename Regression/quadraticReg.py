@@ -29,7 +29,7 @@ def quadratic_regression(X_data, Y_data):
     a_value = solution[a]
     b_value = solution[b]
     c_value = solution[c]
-    equation =f"Квадратична регресія :{a_value:.4f}*x^2 + {b_value:.4f}*x + {c_value:.4f}"
+    equation =f"y = {a_value:.4f}*x^2 + {b_value:.4f}*x + {c_value:.4f}"
     y_pred_quadratic = quadratic_model(X_data, a_value, b_value, c_value)
 
     # Відображення графіків
